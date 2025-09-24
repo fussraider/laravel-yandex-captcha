@@ -1,6 +1,6 @@
 <?php
 
-namespace Dsoloview\YandexCaptcha\View\Components;
+namespace Fussraider\YandexCaptcha\View\Components;
 
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
@@ -16,6 +16,6 @@ class YandexCaptchaComponent extends Component
 
     public function render(): View
     {
-        return view('dsoloview::yandex-captcha');
+        return view('fussraider::yandex-captcha');
     }
 }

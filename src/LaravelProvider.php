@@ -1,9 +1,9 @@
 <?php
 
-namespace Dsoloview\YandexCaptcha;
+namespace Fussraider\YandexCaptcha;
 
-use Dsoloview\YandexCaptcha\View\Components\ExtendedYandexCaptchaComponent;
-use Dsoloview\YandexCaptcha\View\Components\YandexCaptchaComponent;
+use Fussraider\YandexCaptcha\View\Components\ExtendedYandexCaptchaComponent;
+use Fussraider\YandexCaptcha\View\Components\YandexCaptchaComponent;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 
@@ -11,10 +11,10 @@ class LaravelProvider extends ServiceProvider
 {
     public function boot(){
 
-        $this->loadViewsFrom(__DIR__.'/resources/views/components', 'dsoloview');
+        $this->loadViewsFrom(__DIR__.'/resources/views/components', 'fussraider');
 
         $this->publishes([
-            __DIR__.'/resources/views/components' => resource_path('views/vendor/dsoloview'),
+            __DIR__.'/resources/views/components' => resource_path('views/vendor/fussraider'),
         ], 'yandex-captcha-view');
 
         $this->publishes([

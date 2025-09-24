@@ -1,6 +1,6 @@
 <?php
 
-namespace Dsoloview\YandexCaptcha\Rules;
+namespace Fussraider\YandexCaptcha\Rules;
 
 use Closure;
 use Illuminate\Contracts\Validation\ValidationRule;

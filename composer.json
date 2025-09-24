@@ -1,5 +1,5 @@
 {
-  "name": "dsoloview/laravel-yandex-captcha",
+  "name": "fussraider/laravel-yandex-captcha",
   "description": "Yandex captcha integration for Laravel",
   "keywords": ["Yandex SmartCaptcha", "Yandex Captha", "captcha", "Laravel"],
   "type": "library",
@@ -8,22 +8,25 @@
     {
       "name": "Dmitry Soloviev",
       "email": "dsoloview44@gmail.com"
+    },
+    {
+      "name": "Constantine A",
+      "email": "fussraider@gmail.com"
     }
   ],
   "require": {
     "php": ">=8.0",
-    "laravel/framework": "^10"
+    "laravel/framework": "^10|^11"
   },
   "autoload" : {
     "psr-4": {
-      "Dsoloview\\YandexCaptcha\\": "src/"
+      "Fussraider\\YandexCaptcha\\": "src/"
     }
   },
-
   "extra": {
     "laravel": {
       "providers": [
-        "Dsoloview\\YandexCaptcha\\LaravelProvider"
+        "Fussraider\\YandexCaptcha\\LaravelProvider"
       ]
     }
 
